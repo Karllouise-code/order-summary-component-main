@@ -1,0 +1,157 @@
+/** GLOBAL VARIABLE */
+:root {
+    --background-color: hsl(225, 100%, 94%);
+    --btn-background: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+/** HEADER **/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+body {
+    font-size: 16px;
+    background: var(--background-color);
+    text-align: center;
+    position: relative;
+}
+picture {
+    position: absolute;
+    inset: -8rem 0;
+    z-index: -1;
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    width: 20%;
+    min-width: 20rem;
+}
+
+.container .hero {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.content {
+    /* display: flex;
+    flex-direction: column; */
+    padding: 0 2rem 2rem;
+}
+
+h1 {
+    font-size: 1.2rem;
+    margin: 0.8rem;
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+p {
+    font-size: 0.8rem;
+    color: var(--desaturated-blue);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.annual-plan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 0.8rem;
+    background: var(--very-pale-blue);
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    border-radius: 0.5rem;
+}
+
+.annual-plan img {
+    width: 100%;
+}
+.annual-text {
+    font-weight: 700;
+}
+.annual-plan a {
+    color: #3429bc;
+    font-weight: 900;
+    margin-left: 3rem;
+    font-size: 0.7rem;
+}
+.annual-plan a:hover {
+    color: var(--desaturated-blue);
+    text-decoration: none;
+}
+.price {
+    color: var(--desaturated-blue);
+}
+
+/** BUTTON **/
+.end {
+    display: flex;
+    flex-direction: column;
+}
+.btn {
+    padding: 0.8rem 0.8rem;
+    background: var(--btn-background);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: 0.6s;
+}
+
+.btn:hover {
+    background: var(--desaturated-blue);
+}
+.cancel {
+    text-decoration: none;
+    color: var(--desaturated-blue);
+    font-weight: 900;
+    transition: 0.6s;
+}
+
+.cancel:hover {
+    color: var(--dark-blue);
+}
+/** FOOTER **/
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 374px) {
+    picture {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        width: 100%;
+        overflow: hidden;
+    }
+}
